@@ -1,0 +1,66 @@
+{
+	"folders": [
+		{
+			"path": "02a - Project template untuk Windows"
+		},
+		{
+			"path": "02b - Project template untuk Ubuntu"
+		},
+		{
+			"path": "02c - Project template untuk MacOS"
+		},
+		{
+			"path": "03 - Pengenalan Class dan Object"
+		},
+		{
+			"path": "04 - Constructor"
+		},
+		{
+			"path": "05 - Method"
+		},
+		{
+			"path": "06 - Latihan"
+		},
+		{
+			"path": "07 - Berbagai cara membuat object"
+		},
+		{
+			"path": "08 - Memory dan address dari Object"
+		},
+		{
+			"path": "09 - Destructor dan Object Lifetime"
+		},
+		{
+			"path": "10 - Namespace vs This"
+		},
+		{
+			"path": "11 - Prototype"
+		},
+		{
+			"path": "12 - Multi-file"
+		},
+		{
+			"path": "13 - Public dan Private Keyword"
+		},
+		{
+			"path": "14 - Getter dan Setter (Encapsulasi)"
+		},
+		{
+			"path": "15 - Latihan Encapsulasi"
+		},
+		{
+			"path": "16 - Default Assignment"
+		},
+		{
+			"path": "17 - Const Object dan Const Member Functions"
+		},
+		{
+			"path": "18 - Friend Function"
+		}
+	],
+	"settings": {
+		"window.zoomLevel": 0.5,
+		"workbench.colorTheme": "Atom One Dark",
+		"workbench.iconTheme": "vscode-icons"
+	}
+}

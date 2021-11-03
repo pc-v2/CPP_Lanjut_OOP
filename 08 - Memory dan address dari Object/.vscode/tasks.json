@@ -4,25 +4,24 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "build c++",
+            "label": "Compile C++",
             "type": "shell",
-            "command": "clang++",
+            "command": "g++",
             "args": [
                 "-std=c++17",
-                "-stdlib=libc++",
-                "./src/**.cpp",
+                "./src/*.cpp",
                 "-o",
-                "./bin/Main.out",
+                "./bin/Main.exe",
             ]
         },
         {
-            "label": "run",
+            "label":"run",
             "type":"shell",
-            "command":"./bin/Main.out",
-            "dependsOn":["build c++"],
-            "group": {
-                "kind":"build",
-                "isDefault":true
+            "command":"./bin/Main",
+            "dependsOn":["Compile C++"],
+            "group":{
+                "kind": "build",
+                "isDefault": true
             }
         }
     ]

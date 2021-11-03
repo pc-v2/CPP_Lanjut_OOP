@@ -32,60 +32,61 @@
             "label": "build",
             "type":"shell",
             // ini adalah untuk mac dan linux
-            "command": "clang++",
-            "args":[
-                "-std=c++17",
-                "-stdlib=libc++",
-                "./bin/objects/**.o",
-                "-o",
-                "./bin/App.out",
-            ]
-            // ini adalah untuk windows
-            // "command":"g++",
+            // "command": "clang++",
             // "args":[
             //     "-std=c++17",
+            //     "-stdlib=libc++",
             //     "./bin/objects/**.o",
             //     "-o",
-            //     "./bin/App.exe",
+            //     "./bin/App.out",
             // ]
+            // ini adalah untuk windows
+            "command":"g++",
+            "args":[
+                "-std=c++17",
+                "./bin/objects/**.o",
+                "-o",
+                "./bin/App.exe",
+            ]
         },
         {
             "label":"Run",
             "type":"shell",
             // Untuk mac dan Linux
-            "command":"./bin/App.out",
+            // "command":"./bin/App.out",
             // Untuk windows
-            // "command":"./bin/App.exe",
+            "command":"./bin/App.exe",
         },
         {
             "label": "All build c++",
             "type": "shell",
             // untuk mac dan linux
-            "command": "clang++",
-            "args": [
-                "-std=c++17",
-                "-stdlib=libc++",
-                "./src/**.cpp",
-                "-o",
-                "./bin/App.out",
-            ]
-
-            // untuk windows
-            // "command": "g++",
+            // "command": "clang++",
             // "args": [
             //     "-std=c++17",
+            //     "-stdlib=libc++",
             //     "./src/**.cpp",
             //     "-o",
-            //     "./bin/App.exe",
+            //     "./bin/App.out",
             // ]
+
+            // untuk windows
+            "command": "g++",
+            "args": [
+                "-std=c++17",
+                "./src/**.cpp",
+                "-o",
+                "./bin/App.exe",
+            ]
         },
         {
             "label": "run + all build",
             "type":"shell",
             // untuk mac dan linux
-            "command":"./bin/App.out",
-            // untuk windows
-            // "command":"./bin/App.exe",
+            // "command"
+            //"./bin/App.out",
+            // // untuk windows
+            "command":"./bin/App.exe",
             "dependsOn":["All build c++"],
             "group": {
                 "kind":"build",
